@@ -23,10 +23,6 @@ app.use('/', indexRouter)
 app.use('/users', usersRouter)
 
 
-// bootstrap
-app.use('/bootstrap/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'))
-app.use('/bootstrap/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'))
-
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404))
